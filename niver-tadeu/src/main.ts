@@ -120,7 +120,7 @@ if (radios.length && companionsSection && companionsContainer && addCompanionBtn
     e.preventDefault();
     
     // O número de telefone passado
-    const whatsappNumber = "5521993188880"; 
+    const whatsappNumber = "5521964016782"; 
     
     const guestName = (document.getElementById('guest-name') as HTMLInputElement).value;
     const isBringingCompanions = (document.querySelector('input[name="has_companions"]:checked') as HTMLInputElement)?.value === 'sim';
