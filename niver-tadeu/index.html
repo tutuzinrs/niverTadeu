@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/spider.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite - Niver Tadeu</title>
+    <!-- Font Awesome config if needed, or Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- SPLASH SCREEN DE ABERTURA -->
+    <div id="splash-screen">
+      <div class="web-line web-1"></div>
+      <div class="web-line web-2"></div>
+      <div class="web-line web-3"></div>
+      <div class="web-line web-4"></div>
+      <div class="web-line web-5"></div>
+      <div class="web-line web-6"></div>
+      <div class="splash-logo">🕸️</div>
+    </div>
+
+    <!-- BACKGROUND GRID ALONG ALL PAGE -->
+    <div class="site-bg"></div>
+
+    <nav class="navbar">
+      <a href="#onde" class="nav-link">Localização</a>
+      <a href="#rsvp" class="nav-link">Presença</a>
+      <a href="#presentes" class="nav-link">Presentes</a>
+    </nav>
+
+    <main class="hero reveal">
+      <div class="content">
+        <img
+          src="/spiderman.png"
+          alt="Homem Aranha Chibi"
+          class="spiderman-img-free"
+        />
+
+        <div class="invite-text">
+          você está convidado para a
+        </div>
+        <h1 class="main-title">FESTA DO</h1>
+        <div class="name-bar">TADEU</div>
+
+        <div class="age-badge">
+
+          <span class="age">3 ANOS</span>
+          
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span class="scroll-text">DESLIZE</span>
+        <div class="mouse-icon"></div>
+      </div>
+    </main>
+
+    <section class="section reveal" id="quando">
+      <div class="section-header">
+        <h2 class="title">QUANDO SERÁ?</h2>
+      </div>
+      <div class="cards-container">
+        <div class="info-card">
+          <i class="ph ph-calendar-blank icon-purple"></i>
+          <span class="card-label">DATA</span>
+          <strong class="card-value value-purple">22 DE MARÇO</strong>
+          <span class="card-subvalue value-purple-dim">2026</span>
+        </div>
+        <div class="info-card">
+          <i class="ph ph-clock icon-red"></i>
+          <span class="card-label">HORÁRIO</span>
+          <strong class="card-value value-red">14:00H</strong>
+          <span class="card-subvalue value-red-dim">DOMINGO</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="presentes">
+      <div class="section-header">
+        <i class="ph ph-gift icon-purple title-icon"></i>
+        <span class="suptitle">GIFT IDEAS</span>
+        <h2 class="title" style="font-size: 1.8rem;">SUGESTÕES DE<br>PRESENTES</h2>
+        <p class="subtitle">O mais importante é a sua presença! Mas se quiser presentear o nosso herói, aqui estão algumas sugestões:</p>
+      </div>
+      
+      <div class="gifts-grid">
+        <div class="gift-item">
+          <span class="gift-emoji">🕷️</span>
+          <span class="gift-name">Brinquedos ( gosto de tudo, principalmente super heróis, hotwheels e patrulha canina)</span>
+        </div>
+        <div class="gift-item">
+          <span class="gift-emoji">🧴</span>
+          <span class="gift-name">Acessórios e perfumaria</span>
+        </div>
+        <div class="gift-item">
+          <span class="gift-emoji">👟</span>
+          <span class="gift-name">Sapatos número 24/25</span>
+        </div>
+        <div class="gift-item">
+          <span class="gift-emoji">👕</span>
+          <span class="gift-name">Roupas tam. 3 anos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="rsvp">
+      <div class="section-header">
+        <span class="suptitle rsvp-color">RSVP</span>
+        <h2 class="title">CONFIRME<br>PRESENÇA</h2>
+        <p class="subtitle">Precisamos saber quantos heróis virão! 🦸‍♂️</p>
+      </div>
+      
+      <div class="form-card">
+        <form id="rsvp-form" class="rsvp-form">
+          <input type="text" id="guest-name" placeholder="Seu nome" required class="form-input" />
+          
+          <div class="radio-question">
+            <label class="radio-label">Levará acompanhantes?</label>
+            <div class="radio-options">
+              <label class="radio-option"><input type="radio" name="has_companions" value="sim" id="comp-sim"> Sim</label>
+              <label class="radio-option"><input type="radio" name="has_companions" value="nao" id="comp-nao" checked> Não</label>
+            </div>
+          </div>
+          
+          <div id="companions-section" class="companions-section" style="display: none;">
+            <div id="companions-container" class="companions-container">
+              <!-- Inputs injetados dinamicamente -->
+            </div>
+            <button type="button" id="add-companion-btn" class="add-btn">
+              <i class="ph-bold ph-plus"></i> Adicionar acompanhante
+            </button>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="ph-bold ph-whatsapp-logo"></i> CONFIRMAR PRESENÇA!
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section reveal" id="onde">
+      <div class="section-header">
+        <i class="ph ph-map-pin icon-red title-icon"></i>
+        <span class="suptitle rsvp-color">LOCALIZAÇÃO</span>
+        <h2 class="title">ONDE SERÁ?</h2>
+      </div>
+      
+      <div class="location-card">
+        <h3 class="address-title">R. Polar, 11 - Dois Irmãos</h3>
+        <p class="address-ref">Ponto de referência: ao lado da quadra</p>
+        <a href="https://maps.app.goo.gl/vVVJnJCDHQK8vh7k6" target="_blank" class="btn-maps">
+          <i class="ph-bold ph-arrow-square-out"></i> ABRIR NO MAPS
+        </a>
+      </div>
+    </section>
+
+    <section class="section reveal" id="atencao">
+      <div class="warning-card">
+        <div class="water-drops">
+          <i class="ph-fill ph-drop" style="position:absolute; top:-10px; left:10%; color:#5566aa; font-size:1.5rem;"></i>
+          <i class="ph-fill ph-drop" style="position:absolute; top:20px; right:15%; color:#60b0ff; font-size:2rem;"></i>
+        </div>
+        <div class="warning-icon-large">
+          <i class="ph ph-drop warning-drop"></i>
+        </div>
+        <h2 class="warning-title">⚠️ ATENÇÃO!</h2>
+        <h3 class="warning-subtitle">🏊‍♂️ Traga sua roupa de banho!</h3>
+        <p class="warning-text">Teremos piscina e muita diversão aquática! 💦</p>
+        <p class="warning-text-small">Não esqueça toalha e protetor solar! 🌞</p>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-title">
+        <span class="spider-deco">🕷️</span>
+        TE ESPERAMOS LÁ!
+        <span class="spider-deco">🕸️</span>
+      </div>
+      <p class="footer-msg">Com muito carinho, a família do Tadeu ❤️</p>
+      <div class="dots">•••••</div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
